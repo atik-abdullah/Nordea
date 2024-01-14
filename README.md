@@ -9,7 +9,8 @@
 - [Instruction to use the project](#section2)
     - [The REST api endpoints static source](#subsection2.1)
     - [The REST api endpoints third party source](#subsection2.2)
-    - [Note](#subsection2.3)
+    - [Open the client app](#subsection2.3)
+    - [Note](#subsection2.4)
 
 
 ## Instruction to run the project <a name="section1"></a>
@@ -120,10 +121,14 @@ Note: Currently only three countries - Finland, England and Sweden
     
 - Also works with country name including space in the URL (and it is not case sensitive), e.g.  
     [http://localhost:8081/v1/countries-from-restcountries/united states](http://localhost:8081/v1/countries-from-restcountries/united%20states)
-    
+
 - Supply random text instead of a country name will show a customized error response with detail information to hint the cause of the problem, e.g.  
     http://localhost:8081/v1/countries-from-restcountries/asdf
 
-### Note <a name="subsection2.3">
+### Open the client app <a name="subsection2.3">
+
+- Go to: http://localhost:8080
+
+### Note <a name="subsection2.4">
 - The endpoint returning all countries will show two attribute (name and country_code). Endpoints returning one country will show 4 attributes (name, country_code, capital, population). 
 - Make sure the front end app is opened in one tab at a time. The current session handling will show wrong message on the popup notification if there are multiple sessions running at the same time.

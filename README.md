@@ -46,24 +46,11 @@ Nordea
     ├── pom.xml
     └── src
 ```
-Nordea is the root directory. (When you download/clone from Github, the folder name will be "Nordea_main", so adjust the pathnames accordingly)
+Nordea is the root directory. (Nordea-main when downloaded/cloned from Github)
 
 ### 1st approach to start and stop the project <a name="subsection1.3">
 
-Requirment: Docker installed on the system
-
-From the root directory (Nordea) run:
-
-    cd Nordea
-    docker compose up
-
-To stop the services, press Ctrl+C and then run:
-
-    docker compose down
-
-### 2nd approach to start and stop the project <a name="subsection1.4">
-
-Requirement: Java installed on the system
+Requirement: [Java](#subsection1.6) installed on the system
 
 Inside the Nordea/backend folder run:
 
@@ -81,6 +68,19 @@ From another terminal, inside the Nordea/frontend folder run:
 
 To stop the services, press Ctrl+C in the respective directory
 
+### 2nd approach to start and stop the project <a name="subsection1.4">
+
+Requirment: Docker installed on the system
+
+From the root directory (Nordea) run:
+
+    cd Nordea
+    docker compose up
+
+To stop the services, press Ctrl+C and then run:
+
+    docker compose down
+
 ### Troubleshooting <a name="subsection1.5">
 
 If you need to change the docker-compose.yaml and run have the effect applied, run as follows:
@@ -88,13 +88,13 @@ If you need to change the docker-compose.yaml and run have the effect applied, r
     docker-compose build --no-cache
     docker compose up
 
-### Note <a name="subsection1.5">
+### Note <a name="subsection1.6">
+
+- The apps were built with "openjdk version "17.0.5" 2022-10-18" java version present on the system.
 
 - Inside the mvnw.cmd file's DOWNLOAD_URL= has been changed from https to http. Otherwise the maven wrapper had issues running.
 
 - The frontend folder inside the frontend project is a folder that holds syling files required by Vaadin. The name of the folder is conincidentally same as the project name.
-
-- The apps were built with "openjdk version "17.0.5" 2022-10-18" java version present on the system.
 
 ## Instruction to use the project <a name="section2"></a>
 

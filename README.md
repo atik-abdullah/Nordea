@@ -55,16 +55,20 @@ Requirement: [Java](#subsection1.6) installed on the system
 Run following:
 
     cd Nordea/backend
+    
     // For Linux/Mac/Unix
     ./mvnw spring-boot:run              
+    
     // For Windows
     .\mvnw.cmd spring-boot:run              
 
 From another terminal, run:
 
     cd Nordea/frontend
+    
     //For Linux/Mac/Unix
     ./mvnw spring-boot:run              
+    
     // For Windows            
     .\mvnw.cmd spring-boot:run          
 

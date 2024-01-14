@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  backend:
+    build: ./backend
+    image: backend
+    mem_limit: 700m
+    ports:
+      - "8081:8081"
+  
+  frontend:
+    build: ./frontend
+    image: frontend
+    mem_limit: 700m
+    ports:
+      - "8080:8080"

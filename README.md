@@ -83,18 +83,18 @@ To stop the services, press Ctrl+C and then run:
 
 ### Troubleshooting <a name="subsection1.5">
 
-If you need to change the docker-compose.yaml and run have the effect applied, run as follows:
+If you need to change the **docker-compose.yaml** and run have the effect applied, run as follows:
 
     docker-compose build --no-cache
     docker compose up
 
 ### Note <a name="subsection1.6">
 
-- The apps were built with "openjdk version "17.0.5" 2022-10-18" java version present on the system.
+- The apps were built with **openjdk version "17.0.5" 2022-10-18** java version present on the system.
 
-- Inside the mvnw.cmd file's DOWNLOAD_URL= has been changed from https to http. Otherwise the maven wrapper had issues running.
+- Inside the mvnw.cmd file's **DOWNLOAD_URL** has been changed from https to http. Otherwise the maven wrapper had issues running on Windows.
 
-- The frontend folder inside the frontend project is a folder that holds syling files required by Vaadin. The name of the folder is conincidentally same as the project name.
+- The **frontend** folder inside the **frontend** project is a folder that holds syling files required by Vaadin. The name of the folder is conincidentally same as the project name.
 
 ## Instruction to use the project <a name="section2"></a>
 
@@ -130,5 +130,5 @@ Note: Currently only three countries - Finland, England and Sweden
 - Go to: http://localhost:8080
 
 ### Note <a name="subsection2.4">
-- The endpoint returning all countries will show two attribute (name and country_code). Endpoints returning one country will show 4 attributes (name, country_code, capital, population). 
+- The endpoint returning all countries will show two attributes (name and country_code). Endpoints returning one country will show 4 attributes (name, country_code, capital, population). 
 - Make sure the front end app is opened in one tab at a time. The current session handling will show wrong message on the popup notification if there are multiple sessions running at the same time.

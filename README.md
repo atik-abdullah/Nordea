@@ -137,5 +137,6 @@ Note: Currently only three countries - Finland, England and Sweden
 - Go to: http://localhost:8080
 
 ### Note <a name="subsection2.4">
-- The endpoint returning all countries will show two attributes (name and country_code). Endpoints returning one country will show 4 attributes (name, country_code, capital, population). 
+- The endpoint returning all countries will show **two attributes** (name and country_code). 
+- Endpoints returning one country will show **four attributes** (name, country_code, capital, population). 
 - Make sure the front end app is opened in one tab at a time. The current session handling will show wrong message on the popup notification if there are multiple sessions running at the same time.

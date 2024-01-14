@@ -17,7 +17,7 @@
 
 ### Verify port <a name="subsection1.1">
 
-Verify that port 8080 and 8081 are not being used by any other service:
+Verify that port **8080** and **8081** are not being used by any other service:
 
     lsof -i :8080
     lsof -i :8081
@@ -52,19 +52,21 @@ Nordea is the root directory. (Nordea-main when downloaded/cloned from Github)
 
 Requirement: [Java](#subsection1.6) installed on the system
 
-Inside the Nordea/backend folder run:
+Run following:
 
     cd Nordea/backend
-    ./mvnw spring-boot:run              (For Linux/Mac/Unix users)
-            or
-    .\mvnw.cmd spring-boot:run          (For Windows users)    
+    // For Linux/Mac/Unix
+    ./mvnw spring-boot:run              
+    // For Windows
+    .\mvnw.cmd spring-boot:run              
 
-From another terminal, inside the Nordea/frontend folder run:
+From another terminal, run:
 
     cd Nordea/frontend
-    ./mvnw spring-boot:run              (For Linux/Mac/Unix users)
-            or
-    .\mvnw.cmd spring-boot:run          (For Windows users)
+    //For Linux/Mac/Unix
+    ./mvnw spring-boot:run              
+    // For Windows            
+    .\mvnw.cmd spring-boot:run          
 
 To stop the services, press Ctrl+C in the respective directory
 
@@ -72,8 +74,9 @@ To stop the services, press Ctrl+C in the respective directory
 
 Requirment: Docker installed on the system
 
-From the root directory (Nordea) run:
+Run following:
 
+    // Change to the project root directory
     cd Nordea
     docker compose up
 
